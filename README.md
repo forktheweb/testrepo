@@ -15,7 +15,11 @@ Security standards should be referenced in diagrams or documents using the regex
 
 # List of Security Standards
 
-| Identifier  | Short Name  | Category | Strength | Expiration | Superseded By | Description |
-|---|---|---|---|---|---|---|
-| test  | test  | test  | test  | test  | test  | test  |
-| test  | test  | test  | test  | test  | test  | test  |
+| Identifier  | Short Name  | Category | Strength | Expiration | Description |
+|---|---|---|---|---|---|
+| 100  | crate_saml  | authc  | sufficient  | 12/01/2020  | End-user (human) authentication via SAML v2 single-sign on exchange via the Crate keycloak deployment brokering Cisco SSO. Cisco policy for 2FA, password complexity, rotation, etc. are applied at the Cisco SSO IdP.  <br /><br /><b>Technical criteria defining this standard:</b><br /><br /><ul><li>SPs that support SAML single-sign-out <b>must</b> be configured to use single-sign-out</li><li>POST binding <b>must</b> be used</li><li>Client signature verification <b>must</b> be used if the SP supports it.</li><li>Assertions <b>may</b> be configured according to SP requirements, but <b>must</b> include either email or cecid as username and <b>should</b> use email whenever possible</li></ul>  |
+| 101  | crate_oidc  | authc  | sufficient  | 12/01/2020  | End-user (human) authentication via OIDC single-sign on exchange via the Crate keycloak deployment brokering Cisco SSO. Cisco policy for 2FA, password complexity, rotation, etc. are applied at the Cisco SSO IdP. <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>Clients <b>should</b> use bearer-only access type whenever possible.</li><li>Clients <b>should not</b> use public access type</li></ul>  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
