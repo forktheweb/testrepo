@@ -26,6 +26,13 @@ Security standards should be referenced in diagrams or documents using the regex
 | 106  | crate_logs  | auditing  | sufficient  | 12/01/2020  | Basic storage and handling of log information for crate platform services (not tenant workloads) <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>Logs <b>must</b> be stored in the Crate logging service index dedicated for Crate logs</li><li>Logs <b>must</b> include all stdout and stderr output</li><li>Logs <b>must not</b> be persisted within the application</li></ul>  |
 | 107  | 	secret_authc  | authc  | sufficient  | 08/12/2019  | Deprecated. This is superseded by more specific standards for a given architecture.  |
 | 108  | 	secret_authz  | authz  | sufficient  | 08/12/2019  | Deprecated. This is superseded by more specific standards for a given architecture.  |
+| 109  | ssh_pki  | authc  | sufficient  | 12/01/2020  | The SSH protocol (also referred to as Secure Shell) is a method for secure remote login from one computer to another. It provides several alternative options for strong authentication, and it protects the communications security and integrity with strong encryption. It is a secure alternative to the non-protected login protocols (such as telnet, rlogin) and insecure file transfer methods (such as FTP).   <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>A private key <b>must</b> be utilized</li><li>Key length <b>must</b> be 4096</li><li><b>Must</b> be SSH2 or higher</li><li>Keys <b>must</b> be password protected or stored on a hardware token with pin</li></ul> |
+| 110  | ssh_keyfile  | authz  | weak	 | 12/01/2020  | The authorized keys file determines your user, which in turn provides access and authorization to only certain files on the remote host. This is a course grained standard because authentication and authorization are closely correlated.  <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>Public key cert file <b>must</b> be stored in a location that cannot be tampered with</li></ul> |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  |
 | test  | test  | test  | test  | test  | test  |
 | test  | test  | test  | test  | test  | test  |
 | test  | test  | test  | test  | test  | test  |
