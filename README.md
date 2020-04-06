@@ -15,7 +15,7 @@ Security standards should be referenced in diagrams or documents using the regex
 
 # List of Security Standards
 
-| Property  | Description  |
-|---|---|
-| test  | test  |
-| test  | test  |
+| Identifier  | Short Name  | Category | Strength | Expiration | Superseded By | Description |
+|---|---|---|---|---|---|---|
+| test  | test  | test  | test  | test  | test  | test  |
+| test  | test  | test  | test  | test  | test  | test  |
