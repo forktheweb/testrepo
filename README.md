@@ -1,4 +1,4 @@
-# Introduction
+# CrateKube Security Architecture Standards
 This document serves as the source-of-truth for Crate Security Architecture standards. The table of security standards is defined as follows:
 | Property  | Description  |
 |---|---|
@@ -23,7 +23,7 @@ Security standards should be referenced in diagrams or documents using the regex
 | 103  | jwt_authz  | authz  | sufficient  | 12/01/2020  | Bearer (human or machine) authorizations using the JWT specification via the Crate keycloak deployment brokering Cisco SSO. Cisco policy for 2FA, password complexity, rotation, etc. are applied at the Cisco SSO IdP. <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>Claims <b>must</b> include userid</li><li>Userid <b>should</b> be email</li><li>Userid <b>should</b> be CEC ID if the SP does not support emails for userid</li><li>Claims <b>must</b> include Cisco AD groups assignment</li></ul> |
 | 104  | api_authc  | authc  | sufficient  | 12/01/2020  | Authentication of machine clients to services with a long-lived api key. Inherits all requirements from `jwt_authc` with the exception of changing token type from access to offline.  |
 | 105  | https_le  | trust  | weak  | 12/01/2020  | HTTPS using TLS certificates issued for specific DNS names. This is an implicit type of trust based on the client-side configuration of a target URL. It is implicit because the client will trust whatever host it is pointed at as long as the hosts presents a valid certificate signed by the the trusted root CAs of the client. This assumes that DNS is not compromised, and that the CA issuing the certificate for the target host is also not compromised, and the host itself is not compromised. There is no direct trust between the client and server, and trust is only established one direction (client trusts server).    <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>TLS v1.2 or higher <b>must</b> be used to establish authenticity and confidentiality of the network traffic from the server</li><li>The client <b>must</b> not present a certificate for authentication via TLS</li><li>HTTP <b>must</b> be used as the application protocol</li><li>The host certificate must be issued by Let's Encrypt CA's <sup>2</sup></li></ul> |
-| test  | test  | test  | test  | test  | test  |
+| 106  | crate_logs  | auditing  | sufficient  | 12/01/2020  | Basic storage and handling of log information for crate platform services (not tenant workloads) <br /><br /><b>Technical criteria defining this standard:</b><br /><br /> <ul><li>Logs <b>must</b> be stored in the Crate logging service index dedicated for Crate logs</li><li>Logs <b>must</b> include all stdout and stderr output</li><li>Logs <b>must not</b> be persisted within the application</li></ul>  |
 | test  | test  | test  | test  | test  | test  |
 | test  | test  | test  | test  | test  | test  |
 | test  | test  | test  | test  | test  | test  |
