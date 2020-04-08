@@ -37,3 +37,8 @@ Security standards should be referenced in diagrams or documents using the regex
 | 117  | storage_aes256  | confidential  | sufficient  | 12/01/2020  | Encryption for all persistent data.  <br /><br /><b>Technical criteria defining this standard:</b><br /><br />  <ul><li>AES <b>must</b> be algorithim</li><li>Key length <b>must</b> be 256 bits</li></ul>|
 | 118  | token_authc	| authc  | weak  | 12/01/2020  | General auth token  <br /><br /><b>Technical criteria defining this standard:</b><br /><br />  <ul><li>Minimum key length 20</li><li>`[0-9a-zA-Z]`</li><li>If used, <b>must</b> be done over an encrytped transport</li></ul>  |
 | 119  | token_authz  | authz  | weak  | 12/01/2020  | General auth token  <br /><br /><b>Technical criteria defining this standard:</b><br /><br />  <ul><li>Minimum key length 20</li><li>`[0-9a-zA-Z]`</li><li>If used, <b>must</b> be done over an encrytped transport</li></ul>  |
+
+# References
+
+1. https://www.ietf.org/rfc/rfc2119.txt ↩
+2. https://letsencrypt.org/ ↩
