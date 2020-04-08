@@ -15,7 +15,7 @@ Each architecture document should contain:
 - List of components and their short descriptions (1-2 paragraphs)
 - [MVaP](https://www.toptal.com/designers/product-design/minimum-valuable-product) functionality expectations
 - Diagrams
-  - Component Diagram:  what are the system functions and how do they interact
-  - Physical Diagram:  where will the component be deployed
-  - Security Diagram:  authc, authz, trust relationships, auditing as defined in [Crate Security Architecture Standards](./Security%20Architecture%20Standards.md)
+  - _Component Diagram_:  what are the system functions and how do they interact
+  - _Physical Diagram_:  where will the component be deployed
+  - _Security Diagram_:  authc, authz, trust relationships, auditing as defined in [Security Architecture Standards](./Security%20Architecture%20Standards.md)
  
