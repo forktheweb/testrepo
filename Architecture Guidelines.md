@@ -2,11 +2,14 @@
 
 
 ## Introduction
-This document is designed to provide a set of guidelines for contributors to architect new CrateKube features.  New 
-contributors and developers who are unfamiliar with our architecture document format can refer here before submitting proposals.
+This document is designed to provide a set of guidelines for contributors to architect new Cisco CrateKube features.  New 
+contributors and developers who are unfamiliar with our architecture format should refer here before submitting pull requests.
+We're pretty straight-forward with how we document our microservice architecture, but we also like to keep things consistent so 
+please read on if you are interested in becoming a contributor.
 
 ## Who is this for?
-All developers and contributors who are going to architect new features on the CrateKube open source project.
+All developers and contributors who are going to architect new features on the CrateKube open source project, and who seek to document 
+those features.
 
 ## Document Format
 Each architecture document should contain:
@@ -61,3 +64,10 @@ The following diagrams must be included in your architecture document:
 1. Visit [PlantText](https://www.planttext.com/)
 2. Write UML code
 3. Embed SVG as `![Component](--SVG URL --)`
+
+## Architecture approval process
+
+Currently this process is loose at best, but essentially:
+1. Submit a PR with your architecture proposal
+2. Add two maintainers as reviewers
+3. Profit?
