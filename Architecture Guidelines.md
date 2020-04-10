@@ -59,6 +59,9 @@ The following diagrams must be included in your architecture document:
 </p>
 </details>
 
+#### Example Architecture Page
+Here's a link to the [CrateKube General Architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md), to be used as an example of what we are after.
+
 ##### Instructions:
 
 1. Visit [PlantText](https://www.planttext.com/)
@@ -70,4 +73,5 @@ The following diagrams must be included in your architecture document:
 Currently this process is loose at best, but essentially:
 1. Submit a PR with your architecture proposal
 2. Add two maintainers as reviewers
-3. Profit?
+3. Both maintainer and member discussions occur
+4. Profit?
