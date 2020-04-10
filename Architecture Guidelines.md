@@ -59,14 +59,14 @@ The following diagrams must be included in your architecture document:
 </p>
 </details>
 
-#### Example Architecture Page
-Here's a link to the [CrateKube General Architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md), to be used as an example of what we are after.
-
 ##### Instructions:
 
 1. Visit [PlantText](https://www.planttext.com/)
 2. Write UML code
 3. Embed SVG as `![Component](--SVG URL --)`
+
+## Example Architecture Page
+Here's a link to the [CrateKube General Architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md), to be used as an example of what we are after.
 
 ## Architecture approval process
 
