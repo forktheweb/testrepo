@@ -1,0 +1,6 @@
+## Introduction
+This service is part an [MVaP architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) that creates infrastructure [VPC](https://aws.amazon.com/vpc/)s, bootstraps, and configures [Kubernetes](https://kubernetes.io/) clusters on AWS [EC2](https://aws.amazon.com/ec2/pricing/) using [CloudFormation](https://aws.amazon.com/cloudformation/) templates and [Terraform](https://www.terraform.io/).  The goal of this [architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) is to provide default secure, ephemeral, cloud-ready instances that will launch on [AWS](https://aws.amazon.com/ec2/), and in the future via other providers such as [Google CP](https://cloud.google.com/gcp/), [Microsoft  Azure](https://azure.microsoft.com/en-us/), and even [IBM Cloud Paks](https://www.ibm.com/cloud/paks/).  This approach is based on an Open Source Software initiative within Cisco called [NoOps](https://www.cio.com/article/3407714/what-is-noops-the-quest-for-fully-automated-it-operations.html), which takes a first iterative step towards modifying the IT lifecycle in order for zero human intervention to be necessary for mundane orchestration tasks.
+
+
+
+## What does this service do?
