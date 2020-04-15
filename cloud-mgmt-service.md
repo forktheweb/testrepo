@@ -53,15 +53,24 @@ java -jar build/libs/cloud-mgmt-service-1.0.0-SNAPSHOT-all.jar
 We strive to have our builds repeatable across development environments so we also provide a Docker build to generate 
 the Dropwizard application container.  The examples below should be executed from the root of the project.
 
-Running the base docker build:
+Run the base docker build:
 ```bash
-docker run --target build .
+docker build -t cloud-mgmt-service:local --target build .
 ```
 Note: This requires docker 19.03.x or above.  Docker 18.09 will throw errors for mount points and the `--target` flag.
 
-Generating the Dropwizard application docker image:
+Build the package target:
+```
+docker build -t cloud-mgmt-service:local --target package .
+```
+Run the docker application locally on port 8080:
 ```bash
-docker run -t cloud-mgmt-service --target package .
+docker run -p 8080:9000 -d cloud-mgmt-service:local /entrypoint.sh server
+```
+
+Fire up the Swagger specification by visiting the following URL in a browser:
+```bash
+http://localhost:8080/swagger
 ```
 
 ## Using the API client
