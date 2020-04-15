@@ -97,12 +97,15 @@ Maven:
 ```
 
 ## Releases
-The [MVaP architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) for CrateKube specifies that the [LifeCycle Service Atom Feeds](https://github.com/cratekube/lifecycle-service/blob/7d115fa0b2c5e8ebb0f5e7d91425498aec02d91c/src/test/resources/testapp.yml) are responsible for delegating upgrades to services.  The user can decide when to upgrade by hitting an API call, and the `LifeCycle Service` will handle those upgrades.  This service all bootstraps and initializes all CrateKube components for Kubernetes clusters.
+The [MVaP architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) for CrateKube specifies that the [LifeCycle Service Atom Feeds](https://github.com/cratekube/lifecycle-service/blob/7d115fa0b2c5e8ebb0f5e7d91425498aec02d91c/src/test/resources/testapp.yml) are responsible for delegating upgrades to services.  The user can decide when to upgrade by hitting an API call, and the `LifeCycle Service` will handle those upgrades.  This service bootstraps and initializes all CrateKube components for the Kubernetes cluster.
 
-If you wanted to upgrade services manually, our release publications are stored in the form of atom feeds:
+### Manual upgrades from released code
+If you wanted to upgrade services manually because you are using a single microservice, our release publications are stored in the form of atom feeds:
 
 | Service | Atom Feed |
 | --- | --- |
 | cluster-mgmt-service | https://github.com/cratekube/cluster-mgmt-service/releases.atom |
 | cloud-mgmt-service | https://github.com/cratekube/cloud-mgmt-service/releases.atom |
 | lifecycle-service | https://github.com/cratekube/lifecycle-service/releases.atom |
+
+Service upgrades can be performed by pulling the latest from our upstream master to your fork, and merging in those changes locally.  Then follow the steps listed in "Building locally with Docker" section of this document.
