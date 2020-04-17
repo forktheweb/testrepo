@@ -62,6 +62,15 @@ Note: We are bind mounting the `/home/user/tfstate` directory inside of the cont
 
 If you don't want to preserve state, you can just remove the volume flag.
 
+### Environment Variables
+The `app.yml` can also be configured dynamically using environment variables:
+
+```html
+$ CONFIG_DIR=/app/config
+$ SSH_PUBLIC_KEY=<public key>
+$ ADMIN_APIKEY=<api key>
+```
+
 ##### Fire up the Swagger specification by visiting the following URL in a browser:
 ```bash
 http://localhost:8080/swagger
@@ -78,25 +87,6 @@ The resulting operations exist as REST endpoints, which you can simply hit in yo
 | POST | /environment | <code>{ name": "string"}</code>  | Create an environment by specifying a name |
 | GET | /environment/{environmentName} | None | Get a specific environment by name |
 | DELETE | /environment/{environmentName} | None | Delete a specific environment by name |
-
-### Using the API client
-This application generates a client for the Dropwizard application by using the swagger specification.  The maven asset
-is available in JCenter, make sure you include the JCenter repository (https://jcenter.bintray.com/) when pulling this
-client.  To use the client provide the following dependency in your project:
-
-Gradle:
-```groovy
-implementation 'io.cratekube:cloud-mgmt-service:1.0.0'
-``` 
-
-Maven:
-```xml
-<dependency>
-  <groupId>io.cratekube</groupId>
-  <artifactId>cloud-mgmt-service</artifactId>
-  <version>1.0.0</version>
-</dependency>
-```
 
 ## Releases
 The [MVaP architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) for CrateKube specifies that the [LifeCycle Service Atom Feeds](https://github.com/cratekube/lifecycle-service/blob/7d115fa0b2c5e8ebb0f5e7d91425498aec02d91c/src/test/resources/testapp.yml) are responsible for delegating upgrades to services.  The user can decide when to upgrade by hitting an API call, and the `LifeCycle Service` will handle those upgrades.  This service bootstraps and initializes all CrateKube components for the Kubernetes cluster.
