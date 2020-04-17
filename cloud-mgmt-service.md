@@ -99,10 +99,3 @@ APIs can be found at `http://localhost:<configured port>/swagger`
 ## Contributing
 If you are interesting in contributing to this project please read the [contribution](CONTRIBUTING.md) and 
 [pull request](PR_GUIDELINES.md) guidelines.  Thank you for your interest in CrateKube!
-
-## Quick links
-- [User documentation](https://github.com/cratekube/cratekube/blob/master/docs/user/ServiceCloudManagement.md) for the `cloud-mgmt-service`
-- CrateKube [operator documentation](cratekube.github.io)
-- [System Architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) and high-level [Requirements](https://github.com/cratekube/cratekube/blob/master/docs/Requirements.md)
-- [How to contribute](https://github.com/cratekube/cratekube/blob/master/CONTRIBUTING.md) 
-- Contributor [architecture](https://github.com/cratekube/cratekube/blob/master/contributing/Architecture%20Guidelines.md), [roles and responsibilities](https://github.com/cratekube/cratekube/blob/master/docs/RolesAndResponsibilities.md), and [developer documentation](https://github.com/cratekube/cratekube/blob/master/docs/Development.md)
