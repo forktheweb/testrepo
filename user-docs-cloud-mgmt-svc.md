@@ -2,7 +2,6 @@
 [![Sponsored By Cisco](https://img.shields.io/badge/sponsored%20by-Cisco-blue)](https://www.cisco.com/c/en/us/solutions/cloud/multicloud-solutions.html)
 [![Coded with Groovy](https://img.shields.io/badge/language-Groovy-green)](https://github.com/apache/groovy)
 [![12 Factor App](https://img.shields.io/badge/app-12--factor-yellow)](https://12factor.net/)
-[![Shipped with Docker](https://img.shields.io/badge/shipped%20with-docker%2019.03.8-blue)](https://github.com/moby/moby)
 
 # Cloud Management Service
 _A service to manage and monitor assets in cloud platforms_
