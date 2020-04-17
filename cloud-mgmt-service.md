@@ -55,17 +55,17 @@ the Dropwizard application container.  The examples below should be executed fro
 
 Run the base docker build:
 ```bash
-docker build -t cloud-mgmt-service:local --target build .
+docker build -t cloud-mgmt-service:build --target build .
 ```
 Note: This requires docker 19.03.x or above.  Docker 18.09 will throw errors for mount points and the `--target` flag.
 
 Build the package target:
 ```
-docker build -t cloud-mgmt-service:local --target package .
+docker build -t cloud-mgmt-service:package --target package .
 ```
 Run the docker application locally on port 8080:
 ```bash
-docker run -p 8080:9000 -d cloud-mgmt-service:local /entrypoint.sh server
+docker run -p 8080:9000 -d cloud-mgmt-service:package
 ```
 
 Fire up the Swagger specification by visiting the following URL in a browser:
