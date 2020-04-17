@@ -4,6 +4,8 @@
 [![12 Factor App](https://img.shields.io/badge/app-12--factor-yellow)](https://12factor.net/)
 [![Shipped with Docker](https://img.shields.io/badge/shipped%20with-docker%2019.03.8-blue)](https://github.com/moby/moby)
 
+# Cloud Management Service
+_A service to manage and monitor assets in cloud platforms_
 
 ## Introduction
 This **_cloud management service_** is part of an [MVaP architecture](https://github.com/cratekube/cratekube/blob/master/docs/Architecture.md) and set of [requirements](https://github.com/cratekube/cratekube/blob/master/docs/Requirements.md) for [CrateKube](https://cratekube.github.io/) that creates infrastructure [VPC](https://aws.amazon.com/vpc/)s, bootstraps, and configures [Kubernetes](https://kubernetes.io/) clusters on AWS [EC2](https://aws.amazon.com/ec2/pricing/) using [CloudFormation](https://aws.amazon.com/cloudformation/) templates and [Terraform](https://www.terraform.io/).  The underlying objective of our product is to provide default secure, ephemeral, cloud-ready instances that will launch on [AWS](https://aws.amazon.com/ec2/), and in the future via other providers such as [Google CP](https://cloud.google.com/gcp/), [Microsoft  Azure](https://azure.microsoft.com/en-us/), and even [IBM Cloud Paks](https://www.ibm.com/cloud/paks/).  This approach is based on an Open Source Software initiative within Cisco called [NoOps](https://www.cio.com/article/3407714/what-is-noops-the-quest-for-fully-automated-it-operations.html), which takes a first iterative step towards modifying the IT lifecycle in order for zero human intervention to be necessary for mundane orchestration tasks.
