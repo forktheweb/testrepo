@@ -74,10 +74,13 @@ This microservice can also run on an Amazon EC2 instance:
 - Find an [Ubuntu Cloud AMI](https://cloud-images.ubuntu.com/locator/ec2/) and spin it up in your AWS EC2 console.
 - [Install Docker](https://docs.docker.com/engine/install/ubuntu/) 
 - [Push](https://docs.docker.com/docker-hub/) your locally built docker image to a registry
-- Configure the necessary environment variables and run the container:
-```bash
+- [Configure](https://github.com/cratekube/cratekube/blob/master/docs/user/ServiceCloudManagement.md#configuration) the necessary environment variables
+- Set up an AWS security policy that allows only your local IP address on port 8080 to the EC2 instance you plan to host on
+- [Run](https://github.com/cratekube/cratekube/blob/master/docs/user/ServiceCloudManagement.md#run-the-docker-application-locally-on-port-8080) the container
 
-docker run -p 8080:9000 -v /home/user/tfstate:/app/config -d cloud-mgmt-service:local
+The cloud management service will become available at:
+```html
+http://<ec2 instance public dns name>:8080/swagger
 ```
 
 
