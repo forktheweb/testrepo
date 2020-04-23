@@ -16,7 +16,7 @@ Be careful in the words that we choose. Whether we are participating as professi
 - Sexist, racist, or otherwise discriminatory jokes and language.
 - Posting sexually explicit or violent material.
 - Posting (or threatening to post) other people's personally identifying information ("doxing").
-- Sharing private content, such as emails sent privately or non-publicly, or unlogged forums such as IRC channel history.
+- Sharing private content, such as emails sent privately or non-publicly
 - Personal insults, especially those using racist or sexist terms.
 - Unwelcome sexual attention.
 - Excessive or unnecessary profanity.
