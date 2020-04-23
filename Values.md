@@ -23,6 +23,9 @@ Be careful in the words that we choose. Whether we are participating as professi
 - Repeated harassment of others. In general, if someone asks you to stop, then stop.
 - Advocating for, or encouraging, any of the above behaviour.
 
+### No ego
+Don't defend a point to win an argument or double-down on a mistake. You are not your work; you don't have to defend your point. You do have to search for the right answer with help from others.
+
 # Efficient
 
 # Accountable
