@@ -44,13 +44,15 @@ Whether you are doing code-level design or documentation, it's best to take owne
 
 # Transparent
 
-We aren't transparent for the sake of being transparent, we are an open source endeavor that embraces diversity and inclusion.  By making information public, we can reduce the threshold to contribution and make collaboration easier. Use public issue trackers, projects, and repositories when possible.
+We aren't transparent for the sake of being transparent, we are an open source endeavor that embraces diversity and inclusion.  By making information public, we can reduce the threshold to contribution and make collaboration easier. We use public github for issue tracking and code merging, and [reviewable.io](https://reviewable.io) for reviews.  We strive to make everything public that we can.
 
 # Iterative
 
-Perhaps the most important of our values is keeping the development cycle short.  The maintainers of this project use one week Agile sprints, for example.  This is so we can fail-fast and pivot quicker than other groups.
+Perhaps the most important of our values is keeping the development cycle short.  The maintainers of this project use one week Agile sprints, for example.  This is so we can fail-fast and pivot quicker than other groups.  
 
 # Valuable
+
+Delivering value is something that is incredibly important if you want your project to be successful.  That's why we carefully craft our MVaP requirements and spend time listening to customers.  If the product you end up with delivers features that people don't need, then it's time to reassess your development path and iterate quickly to get back on track.
 
 # Effective
 This value is broad, and it is meant to be.  Being effective at inflencing others, writing good code, leaving good reviews, and being a compassionate human being are all good examples.  
