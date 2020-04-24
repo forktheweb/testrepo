@@ -29,13 +29,13 @@ Don't defend a point to win an argument or double-down on a mistake. You are not
 # Efficient
 
 ### Use well-established design patterns
-The speed of innovation for our projectt is constrained by the total complexity we have added so far, so every little reduction in complexity helps. 
+The speed of innovation for our project is constrained by the total complexity we have added so far, so every little reduction in complexity helps. 
 
 ### Use popular and stable technology
 Don’t pick an interesting technology just to make your work more fun; using established, popular tech will ensure a more stable and more familiar experience for you and other contributors.
 
 ### Be concise
-Keep in mind that what you write once will be read by many, if it is short and to the point.  Provide TLDR summaries where possible.
+Keep in mind that what you write once will be read by many, but only if it is short and to the point.  Provide TLDR summaries where possible.
 
 # Accountable
 
@@ -44,7 +44,7 @@ Whether you are doing code-level design or documentation, it's best to take owne
 
 # Transparent
 
-We aren't transparent for the sake of being transparent, we are an open source endeavor that embraces diversity and inclusion.  By making information public, we can reduce the threshold to contribution and make collaboration easier. We use public github for issue tracking and code merging, and [reviewable.io](https://reviewable.io) for reviews.  We strive to make everything public that we can.
+We aren't transparent for the sake of being transparent, we are an open source endeavor that embraces diversity and inclusion.  By making information public, we can reduce the threshold to contribution and make collaboration easier. We use public github for issue tracking, code, and releases, and [reviewable.io](https://reviewable.io) for reviews.  We strive to make everything public that we can.
 
 # Iterative
 
@@ -58,7 +58,7 @@ Delivering value is something that is incredibly important if you want your proj
 This value is broad, and it is meant to be.  Being effective at inflencing others, writing good code, leaving good reviews, and being a compassionate human being are all good examples.  
 
 ### Be inquisitive
-Nobody knows everything! Asking questions early avoids many problems later, so questions are encouraged, though they may be directed to the appropriate
+Nobody knows everything! Asking questions early avoids many problems later, so questions are encouraged, though they may be directed to the appropriate channel.
 
 ### Be focused 
 Focus on a single area where you know you can make the most impact.  Don't be afraid to seek out advice if your are not the subject matter expert.
